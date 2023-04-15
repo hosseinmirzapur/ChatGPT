@@ -33,6 +33,10 @@ const ArtGeneratorPage = () => {
 			toggleErrorModal()
 			return false
 		}
+
+		if (images.length !== 0) {
+			setImages([])
+		}
 		setIsLoading(true)
 		try {
 			const response = await openai.createImage({
