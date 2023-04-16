@@ -73,7 +73,7 @@ const ArtGeneratorPage = () => {
 				</div>
 				<div
 					hidden={images.length === 0}
-					className="flex flex-col lg:flex-row  justify-center align-middle gap-4 w-auto">
+					className="flex flex-row lg:flex-row justify-center align-middle gap-4 w-auto">
 					<Carousel
 						responsive={responsive}
 						className="flex justify-center text-center align-middle">

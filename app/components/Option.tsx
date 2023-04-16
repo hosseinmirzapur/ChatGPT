@@ -6,7 +6,7 @@ import { useRouter } from "next/navigation"
 const Option = () => {
 	const { push } = useRouter()
 	return (
-		<div className="flex flex-row sm:gap-[20px] gap-[40px] justify-center sm:pt-[50px] pt-[150px]">
+		<div className="flex flex-row sm:gap-[220px] gap-[40px] justify-center sm:pt-[50px] pt-[150px]">
 			<div className="flex flex-col p-[20px] sm:p-[20px] justify-center gap-5 cursor-pointer">
 				<div className="flex justify-center">
 					<Image
@@ -44,12 +44,10 @@ const Option = () => {
 				<div className="justify-center w-auto">
 					<Button
 						color={"primary"}
-						disabled
 						onClick={() => {
 							push("/open-ai/chat")
 						}}>
-						{/* Chat With AI */}
-						Coming soon...
+						Chat With AI
 					</Button>
 				</div>
 			</div>
